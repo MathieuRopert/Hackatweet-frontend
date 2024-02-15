@@ -1,22 +1,86 @@
 .main {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(9, 11.11vw);
+  grid-template-rows: repeat(5, 20vh);
+
+}
+
+.leftcontent {
+  background-color: blue;
+  grid-column-start: 1 ;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 10;
+
+}
+
+.home {
+  background-color: #181c24;
+  grid-column-start: 3 ;
+  grid-column-end: 8;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  border: 1px solid white;
+  display:flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  padding: 4rem 0;
+}
+
+.trends {
+  background-color: green;
+  grid-column-start: 8;
+  grid-column-end: 10;
+  grid-row-start: 1;
+  grid-row-end: 10;
+  border: 1px solid white;
+}
+
+.tweets {
+  background-color: violet;
+  grid-column-start: 3;
+  grid-column-end: 8;
+  grid-row-start: 2;
+  grid-row-end: 10;
+  border: 1px solid white;
+
+}
+
+.logo {
+  display: flex;
+  text-align: center;
+  margin-left: 50px;
+  margin-top: 10px;
 }
 
 .title {
-  line-height: 1.15;
-  font-size: 4rem;
+  color: white;
+  font-size: 20px;
+  display: flex-start;
 }
 
-.title a {
-  color: #0070f3;
-  text-decoration: none;
+.whatsup {
+  background-color: #181c24;
+  text-align: left;
 }
 
-.title a:hover, .title a:focus, .title a:active {
-  text-decoration: underline;
+.tweet {
+  background-color: #368ee9;
+  color: white;
+}
+
+.titretrend {
+  color: white;
+  font-size: 20px;
+  display: flex-start;
+}
+
+.contentTrends {
+  color:white;
+}
+
+.logout {
+  background-color: #181c24;
+  color: white;
+  border-radius: 50px;
+  padding: 5px 5px 5px 5px;
 }
