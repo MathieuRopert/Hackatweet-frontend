@@ -42,7 +42,6 @@
   color: white;
   border-radius: 50px;
   padding: 5px 5px 5px 5px;
-  margin-top: 650px;
   margin-left: 25px;
   width: 100px;
 }
@@ -52,19 +51,29 @@
   color: white;
   margin-bottom:30px;
 }
+
+.pdp {
+  border-radius: 50px;
+  padding-right:10px;
+}
 /*Top part*/
 
 .title {
   color: white;
   font-size: 20px;
   display: flex;
+  padding-left: 20px;
 }
 
 .whatsup {
+  color: white;
   background-color: #181c24;
   display:flex;
   margin-left: 350px;
   width: 200px;
+  border-top: none;
+  border-left:none;
+  border-right:none;
 }
 
 .tweet {
@@ -73,7 +82,10 @@
   margin-left: 600px;
   margin-top: 50px;
   border-radius: 50px;
-  width: 100px
+  width: 100px;
+  border-top: none;
+  border-left:none;
+  border-right:none;
 }
 
 /*Right part*/
@@ -84,7 +96,6 @@
   grid-column-end: 10;
   grid-row-start: 1;
   grid-row-end: 10;
-  border: 1px solid white;
 }
 
 .titretrend {
@@ -108,7 +119,18 @@
   border: 1px solid white;
 }
 
+.user{
+  color: white;
+  display: flex;
+  align-items: center;
+  margin-top: 900px;
+}
 
+.pdp{
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+}
 
 
 

@@ -1,15 +1,17 @@
 import styles from '../styles/SignUp.module.css';
+import { useRouter } from 'next/router';
 import { useState } from 'react';
 import { login } from '../reducers/user';
 import { useDispatch, useSelector } from 'react-redux';
+import Link from 'next/link';
 
 function SignIn() {
+    const router = useRouter();
     const dispatch = useDispatch();
-    const user = useSelector((state) => state.user.value);
 	const [signInFirstname, setSignInFirstname] = useState('');
     const [signInUsername, setSignInUsername] = useState('');
 	const [signInPassword, setSignInPassword] = useState('');
-
+console.log
     const handleConnection = () => {
 
 		fetch('http://localhost:3000/user/signin', {
@@ -22,6 +24,7 @@ function SignIn() {
 				if (data.result) {
 					dispatch(login({ firstname: signInFirstname, username: signInUsername, token: data.user.token }));
                     //console.log(login({ firstname: signInFirstname, username: signInUsername, token: data.user.token }))
+                    router.push('/home');
                     setSignInFirstname('');
 					setSignInUsername('');
 					setSignInPassword('');

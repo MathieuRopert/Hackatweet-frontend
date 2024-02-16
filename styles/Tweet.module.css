@@ -1,0 +1,21 @@
+.tweet{
+color: white;
+}
+
+.userSection{
+display: flex;
+}
+
+.tweetContent{
+font-size: 20px;
+}
+
+.likes{
+color: red;
+}
+
+.pdp{
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+}
